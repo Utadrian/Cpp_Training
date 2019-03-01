@@ -3,20 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Microsoft {
-    class Widget
-    {
-
-    }
-}
-
-namespace Wintellect {
-    class Widget
-    {
-
-    }
-}
+using Microsoft;
+using Wintellect;
+using WintellectWidget = Wintellect.AddWidget;
 
 namespace Chapter3
 {
@@ -107,11 +96,52 @@ namespace Chapter3
 
             Object o1 = new Object(); // Creates a new Object object
             Employee e2 = o as Employee; // Casts o to an Employee
-                                        // The cast above fails: no exception is thrown, but e is set to null.
-            //!e2.ToString(); // Accessing e throws a NullReferenceException.
+                                         // The cast above fails: no exception is thrown, but e is set to null.
+                                         //!e2.ToString(); // Accessing e throws a NullReferenceException.
+
+            ValueTypeDemo();
+
+
+            Wintellect.AddWidget w = new Wintellect.AddWidget(); // Not ambiguous
+
+            WintellectWidget w1 = new WintellectWidget(); // No error now
+
+            dynamic value = null;
+
+            for (Int32 demo = 0; demo < 2; demo++)
+            {
+                value = (demo == 0) ? (dynamic)5 : (dynamic)"A";
+                value = value + value;
+                M(value);
+
+            }
+
+            Console.WriteLine(value.GetType());
+
+            string i = "blabla";
+
+            var j = "blabla";
+
+            Console.WriteLine(i.GetType());
+            Console.WriteLine(j.GetType());
+
+            var x = value; //is dynamic
+
+            x = "Strig";
+
+            x = 123123;
+
+            dynamic target = "Jeffrey Richter";
+            dynamic arg = "ff";
+            Boolean result = target.Contains(arg);
+
+            Console.WriteLine(result);
         }
-
-        Wintellect.Widget w = new Wintellect.Widget(); // Not ambiguous
-
+        private static void M(Int32 n) {
+            Console.WriteLine("M(Int32): " + n);
+        }
+        private static void M(String s) {
+            Console.WriteLine("M(String): " + s);
+        }
     }
 }

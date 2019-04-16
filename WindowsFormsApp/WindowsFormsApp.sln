@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "WindowsFormsApp.csproj", "{0A8A7643-CEC9-4BB5-B07F-03688B778949}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.ClassLibrary", "..\DataAccess.ClassLibrary\DataAccess.ClassLibrary.csproj", "{8D505F86-A88C-46EC-AE34-5EAEC82E5320}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A8A7643-CEC9-4BB5-B07F-03688B778949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8A7643-CEC9-4BB5-B07F-03688B778949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8A7643-CEC9-4BB5-B07F-03688B778949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8A7643-CEC9-4BB5-B07F-03688B778949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D505F86-A88C-46EC-AE34-5EAEC82E5320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D505F86-A88C-46EC-AE34-5EAEC82E5320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D505F86-A88C-46EC-AE34-5EAEC82E5320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D505F86-A88C-46EC-AE34-5EAEC82E5320}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42534EA7-5C09-4A27-9EDD-53DF80F3E2CB}
+	EndGlobalSection
+EndGlobal

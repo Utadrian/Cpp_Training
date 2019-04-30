@@ -2,8 +2,8 @@
 {
     public class Bank
     {
-        public int Id { get; set; }
+        public int IdBancă { get; set; }
 
-        public string Name { get; set; }
+        public string Nume { get; set; }
     }
 }

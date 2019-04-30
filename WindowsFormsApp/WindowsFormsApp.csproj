@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>WindowsFormsApp</RootNamespace>
     <AssemblyName>WindowsFormsApp</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,16 +47,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AddAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AddAccount.Designer.cs">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddClient.Designer.cs">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsOfBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientsOfBank.Designer.cs">
+      <DependentUpon>ClientsOfBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsOfClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountsOfClient.Designer.cs">
+      <DependentUpon>AccountsOfClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterogateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterogateAccount.Designer.cs">
+      <DependentUpon>InterogateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialTransaction.Designer.cs">
+      <DependentUpon>FinancialTransaction.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="AddAccount.resx">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddClient.resx">
+      <DependentUpon>AddClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientsOfBank.resx">
+      <DependentUpon>ClientsOfBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsOfClient.resx">
+      <DependentUpon>AccountsOfClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterogateAccount.resx">
+      <DependentUpon>InterogateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialTransaction.resx">
+      <DependentUpon>FinancialTransaction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +120,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

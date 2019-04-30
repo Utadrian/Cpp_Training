@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataAccess.ClassLibrary</RootNamespace>
     <AssemblyName>DataAccess.ClassLibrary</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,6 +35,8 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,14 +45,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountTypes.cs" />
     <Compile Include="Bank.cs" />
     <Compile Include="BanksDataRepository.cs" />
+    <Compile Include="CNPTriggerException.cs" />
+    <Compile Include="CreditAccounts.cs" />
+    <Compile Include="CreditAccountsRepository.cs" />
+    <Compile Include="DebitAccounts.cs" />
+    <Compile Include="DebitAccountsRepository.cs" />
+    <Compile Include="EnumAccType.cs" />
+    <Compile Include="ICreditAccountsRepository.cs" />
+    <Compile Include="IDebitAccountsRepository.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="ClientsDataRepository.cs" />
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="IBanksDataRepository.cs" />
+    <Compile Include="IClientsDataRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
